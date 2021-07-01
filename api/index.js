@@ -23,5 +23,5 @@ mailer.sendMail(
     }
   )
 
-  res.send(`Hello ${body.name}, you just parsed the request body!`);
+  res.send(`Hello ${body.from}!`);
 };
