@@ -12,7 +12,7 @@ const mailer = nodemailer.createTransport({
 
 mailer.sendMail(
     {
-      from: ${body.from},
+      from: body.from,
       to: contactAddress,
       subject:'test',
       html:'test',
