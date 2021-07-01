@@ -10,5 +10,18 @@ const mailer = nodemailer.createTransport({
   },
 })
 
+mailer.sendMail(
+    {
+      from: ${body.from},
+      to: [contactAddress],
+      subject:  "[No subject]",
+      html: "[No message]",
+    },
+    function(err, info) {
+      if (err) res.send(err)
+      res.json({ success: true })
+    }
+  )
+
   res.send(`Hello ${body.name}, you just parsed the request body!`);
 };
