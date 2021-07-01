@@ -19,7 +19,7 @@ mailer.sendMail(
     },
     function(err, info) {
       if (err) res.send(err)
-      res.json({ success: true })
+      res.send(" success: true ")
     }
   )
 
