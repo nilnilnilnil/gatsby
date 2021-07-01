@@ -1,3 +1,4 @@
+const nodemailer = require('nodemailer');
 module.exports = async (req, res) => {
   const { body } = req;
   const contactAddress = "baixiejia@hotmail.com"
