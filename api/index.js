@@ -5,7 +5,7 @@ module.exports = async (req, res) => {
 const mailer = nodemailer.createTransport({
   service: "Gmail",
   auth: {
-    user: xiejiabai,
+    user: xiejiabai@gmail.com,
     pass: u87441194,
   },
 })
@@ -19,7 +19,6 @@ mailer.sendMail(
     },
     function(err, info) {
       if (err) res.send(err)
-      res.send(" success: true ")
     }
   )
 
